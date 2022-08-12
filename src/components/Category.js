@@ -12,27 +12,27 @@ const Category = ({
   textColor,
 }) => {
   return (
-      <div className="grid grid-cols-6 items-center my-4">
-        <div className="col-span-2 flex gap-x-4 items-center">
-          <img className="w-14 h-14" src={img} alt="image_category" />
-          <div>
-            <p className="font-bold">{title}</p>
-            <span>{subtitle}</span>
-          </div>
+    <div className="grid grid-cols-7 items-center my-4">
+      <div className="col-span-3 flex gap-x-4 items-center">
+        <img className="w-12 h-12 rounded-lg" src={img} alt="image_category" />
+        <div>
+          <p className="text-sm font-bold">{title}</p>
+          <span className="text-xs">{subtitle}</span>
         </div>
-        <p>
-          <span>SKU: </span>
-          <span className="font-bold">{num}</span>
-        </p>
-        <p>{name}</p>
-        <p>{date}</p>
-        <button
-          style={{ background: bg, color: textColor }}
-          className="rounded-lg font-bold mx-8"
-        >
-          {btn}
-        </button>
       </div>
+      <p className="text-sm">
+        <span>SKU: </span>
+        <span className="font-bold">{num}</span>
+      </p>
+      <p className="px-4 text-sm">{name}</p>
+      <p className="text-sm">{date}</p>
+      <button
+        style={{ background: bg, color: textColor }}
+        className="rounded-lg text-sm font-bold mx-4"
+      >
+        {btn}
+      </button>
+    </div>
   );
 };
 

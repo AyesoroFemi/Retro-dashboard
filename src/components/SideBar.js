@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 
 const SideBar = () => {
   return (
-    <div className="mx-10 mt-10">
+    <div className="h-screen mx-10">
       <h1 className="text-6xl uppercase ">Retro</h1>
 
       <div className="mt-8">

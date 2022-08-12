@@ -11,9 +11,9 @@ const NavItem = ({ item }) => {
         className={({ isActive }) => (isActive ? activeLink : normalLink)}
         to={item.path}
       >
-        <div className="flex gap-x-4 items-center py-2 w-6/12">
+        <div className="flex gap-x-4 items-center text-gray-600 py-4 w-6/12">
           <span>{item.icon}</span>
-          <p>{item.text}</p>
+          <p className="text-lg">{item.text}</p>
           <p className="pl-8"> {item.icon2}</p>
         </div>
       </NavLink>

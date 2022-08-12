@@ -1,17 +1,17 @@
-import React from 'react'
-import Card from './Card';
+import React from "react";
+import Card from "./Card";
 
 const Expense = () => {
   return (
-
     <div className="grid grid-cols-4 gap-x-4">
       <Card
         title="Daily Income"
         amount={345}
         symbol="$"
-        bg="linear-gradient(90deg, rgba(0,212,225,1) 0%, rgba(9,50,300,1) 35%, rgba(9,9,200,1) 100%)"
+        bg="#2563eb"
         graph=""
-        text="#ffffff"        
+        text="#ffffff"
+        textColor="#ffffff"
       />
       <Card
         title="Daily Expense"
@@ -39,6 +39,6 @@ const Expense = () => {
       />
     </div>
   );
-}
+};
 
-export default Expense
+export default Expense;
