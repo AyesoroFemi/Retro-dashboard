@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Expense = () => {
   return (
-    <div className="grid grid-cols-4 gap-x-4">
+    <div className="grid lg:grid-cols-4 gap-x-4">
       <Card
         title="Daily Income"
         amount={345}

@@ -12,8 +12,8 @@ const Category = ({
   textColor,
 }) => {
   return (
-    <div className="grid grid-cols-7 items-center my-4">
-      <div className="col-span-3 flex gap-x-4 items-center">
+    <div className="grid lg:grid-cols-7 items-center my-4">
+      <div className="py-4 lg:col-span-3 lg:py-0 flex gap-x-4 items-center">
         <img className="w-12 h-12 rounded-lg" src={img} alt="image_category" />
         <div>
           <p className="text-sm font-bold">{title}</p>
@@ -24,7 +24,7 @@ const Category = ({
         <span>SKU: </span>
         <span className="font-bold">{num}</span>
       </p>
-      <p className="px-4 text-sm">{name}</p>
+      <p className="px-0 py-2 lg:px-4 text-sm">{name}</p>
       <p className="text-sm">{date}</p>
       <button
         style={{ background: bg, color: textColor }}

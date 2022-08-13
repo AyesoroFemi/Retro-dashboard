@@ -4,10 +4,13 @@ import Admin from "../assets/admin.png";
 
 function Search() {
   return (
-    <div className="flex justify-between">
-      <div className="flex px-6 rounded-lg bg-blue-100 items-center flex-0.5">
-        <input placeholder="Search..." className="pl-2 outline-0 bg-blue-100" />
-        <span>
+    <div className="flex flex-col gap-y-4 md:flex-row justify-between pb-4">
+      <div className="flex justify-between px-6 rounded-lg bg-blue-100 items-center flex-0.5">
+        <input
+          placeholder="Search..."
+          className="p-4 pl-2 outline-0 bg-blue-100"
+        />
+        <span className="">
           <BiSearch size={24} color="gray" />
         </span>
       </div>
