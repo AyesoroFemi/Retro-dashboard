@@ -7,7 +7,7 @@ const Card = ({ title, amount, graph, symbol, bg, text, textColor }) => {
       className="my-2 rounded-lg drop-shadow-lg py-6 px-6"
     >
       <p style={{color: textColor}} className="text-gray-600 font-bold">{title}</p>
-      <div>
+      <div className="flex gap-x-6">
         <div className="text-3xl font-bold pt-6 pb-4">
           <span className="pr-2">{symbol}</span>
           <span>{amount}</span>

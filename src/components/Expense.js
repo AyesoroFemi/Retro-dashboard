@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "./Card";
+import DailyExpense from "./Charts/BarChart";
+import DailyIncome from "./Charts/DailyIncome";
 
 const Expense = () => {
   return (
@@ -8,8 +10,8 @@ const Expense = () => {
         title="Daily Income"
         amount={345}
         symbol="$"
-        bg="#2563eb"
-        graph=""
+        bg="#3b82f6"
+        graph={<DailyIncome />}
         text="#ffffff"
         textColor="#ffffff"
       />
@@ -18,7 +20,7 @@ const Expense = () => {
         amount={380}
         symbol="$"
         bg="#ffffff"
-        graph=""
+        graph={<DailyExpense />}
         text="#000000"
       />
       <Card
@@ -26,7 +28,7 @@ const Expense = () => {
         amount={5380}
         symbol="$"
         bg="#ffffff"
-        graph=""
+        graph={<DailyIncome />}
         text="#000000"
       />
       <Card
@@ -34,7 +36,7 @@ const Expense = () => {
         amount={4320}
         symbol="$"
         bg="#ffffff"
-        graph=""
+        graph={<DailyExpense />}
         text="#000000"
       />
     </div>

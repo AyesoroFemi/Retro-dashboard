@@ -3,6 +3,7 @@ import { HiOutlinePlusSm } from "react-icons/hi";
 import { BsArrowUpShort } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 import { BiChevronDown } from "react-icons/bi";
+import LineChart from "./Charts/LineChart";
 
 const Main = () => {
   return (
@@ -60,7 +61,9 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="h-96 border-2 my-4 border-red-100 rounded-b-lg "></div>
+        <div className="h-full pb-4 my-4 rounded-b-lg ">
+          <LineChart />
+        </div>
       </div>
     </div>
   );

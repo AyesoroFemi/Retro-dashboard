@@ -1,11 +1,14 @@
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
 import Category from "./Category";
+import RadarChart from "./Charts/Radar";
 
 export const ProductCategory = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-x-4">
-      <div className="w-full lg:w-5/12 border-2 my-4 border-teal-800"></div>
+      <div className="w-full lg:w-5/12 mt-4 bg-[#ffffff] rounded-lg">
+        <RadarChart />
+      </div>
       <div className="w-full bg-[#ffffff] pt-8 mt-4 px-6 rounded-lg">
         <div className="flex justify-between items-center mb-8">
           <p className="text-gray-500 font-bold">Latest Added Products</p>
